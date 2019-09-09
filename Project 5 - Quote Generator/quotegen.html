@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="quotegen.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <title>Quote Generator</title>
+</head>
+<body>
+
+<section class="randomlyGenerated">
+    <div class="header">
+        <h1>Hip Hop Legends Quote Generator</h1>
+    </div>
+    <div class="flex-container choices">
+        <div><img class="eminemImg grayscale" src="img/rabbittrans.png"></div>
+        <div><img class="tupacImg grayscale" src="img/2pac.png"></div>
+    </div>
+
+    <div class="flex-container logos">
+        <div><img class="eminemLogo" src="img/emlogo.png"></div>
+        <div><img class="tupacLogo" src="img/2paclogo.png"></div>
+    </div>
+
+    <div class="flex-container quotebtn">
+        <div class="eminemBtn"><button onclick="createQuotes()">Eminem Quotes</button></div>
+
+        <div class="tupacBtn"><button onclick="createQuotes2()">2pac Quotes</button></div>
+    </div>
+
+    <div class="slidecontainer flex-container">
+        <input type="range" min="1" max="5" value="1" class="slider" id="myRange">
+    </div>
+    <div class="flex-container"><p>How many quotes? - <span id="sliderValue"></span></p></div>
+
+        <div id="generatedQuotes" class="flex-container">
+            <ul>
+                <li id="quoteOne" style="visibility: hidden"></li>
+                <li id="quoteTwo" style="visibility: hidden"></li>
+                <li id="quoteThree" style="visibility: hidden"></li>
+                <li id="quoteFour" style="visibility: hidden"></li>
+                <li id="quoteFive" style="visibility: hidden"></li>
+            </ul>
+        </div>
+</section>
+
+<hr>
+
+    <div class="flex-container quit">
+        <!-- Generated quotes will display here -->
+            <p id="timerQuotes">"Remember one thing Through every dark night, there’s a bright day after that. So no matter how hard it get, stick your chest out. Keep your head up, and handle it." - Tupac</p>
+    </div>
+
+    <div id="hideBtn" class="col text-center">
+    <button class="btn btn-default">Quit</button>
+    </div>
+</section>
+
+    <script src="emquotes.js"></script>
+    <script src="tupacquotes.js"></script>
+    <script src="famousquotes.js"></script>
+</body>
+</html>

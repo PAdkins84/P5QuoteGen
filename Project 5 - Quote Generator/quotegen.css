@@ -1,0 +1,178 @@
+* {
+    /* background-color: rgb(117, 117, 117); */
+    /* background-image: url("img/CONCERT.jpg"); */
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.eminemImg {
+    width: 250px;
+    height: 300px;
+}
+
+.grayscale {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .8s ease-in-out;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#generatedQuotes {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.eminemLogo {
+    width: 190px;
+    height: 50px;
+    position: relative;
+    right: 90px;
+    bottom: 6px;
+}
+
+.tupacLogo {
+    width: 215px;
+    height: 50px;
+    position: relative;
+    left: 100px;
+}
+
+.eminemImg:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+}
+
+.tupacImg:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+}
+
+.header {
+    text-align: center;
+}
+
+.quoteBtn {
+    text-align: center;
+}
+
+.eminemBtn {
+    margin-top: 10px;
+    position: relative;
+    right: 157px;
+}
+
+.tupacBtn {
+    margin-top: 10px;
+    position: relative;
+    left: 150px;
+}
+
+#hideBtn {
+    margin-top: 20px;
+    display: none;
+}
+
+.chooseAmount {
+    display: block;
+    border-top: 0px;
+}
+
+.slidecontainer {
+    margin-top: 30px;
+}
+
+#quoteOne, #quoteTwo, #quoteThree, #quoteFour, #quoteFive {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.randomlyGenerated {
+    margin-bottom: 2px;
+}
+
+#generatedQuotes {
+    margin-bottom: 0px;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+    width: 8%!important;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    margin-top: -5px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: rgb(59, 59, 59);
+}
+
+hr {
+    width: 75%;
+}
+
+@media only screen and (max-width: 630px) {
+    .eminemImg {
+        width: 200px;
+        height: 250px;
+    }
+    .tupacImg {
+        width: 300px;
+        height: 250px;
+    }
+    .eminemLogo {
+        width: 155px;
+        height: 40px;
+        position: relative;
+        right: 69px;
+        bottom: 6px;
+    }
+    .tupacLogo {
+        width: 160px;
+        height: 35px;
+        position: relative;
+        left: 72px;
+    }
+    .eminemBtn {
+        margin-top: 0px;
+        position: relative;
+        right: 100px;
+    }
+    .tupacBtn {
+        margin-top: 0px;
+        position: relative;
+        left: 95px;
+    }
+    input[type=range]{
+        -webkit-appearance: none;
+        width: 20%!important;
+    }
+  }
+  
